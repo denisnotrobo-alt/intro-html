@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+
+<body>
+    <h1>Conhecendo o formulário</h1>
+    <hr>
+    <h2>Form</h2>
+    <p>No HTML, a tag <code> &lt;form&gt; </code> serve para coletar dados do usuários e enviá-los para algum destino,
+        normalmente um servidor ou uma aplicação web.</p>
+
+    <!-- O atributo action - define para onde os dados coletados serão enviados -->
+    <form action="">
+        <!-- elemento input - É utilizado para criar uma caixa onde o usuário poderá inserir a informação solicitada 
+            atributo type - É utilizado para definir o tipo de campo ou comportamento do input 
+        -->
+        <!-- placeholder - o placeholder serve como texto temporário de exemplo para que o usuário saiba como preencher ou interagir com aquele campo  -->
+        <input type="text" placeholder="Ex: Ana da Silva">
+        <br>
+
+        <!-- label/etiqueta - esse elemento é responsável por identificar o campo de um formulário. Esse recurso, diferente do palceholder, é totalmente acessível.  
+            
+        for - serve para associar um rótulo/label a um elemento do formulário.
+        id - serve para identificar de forma única um elemento.
+        -->
+        <label for="password">Senha</label>
+        <input type="password" placeholder="Digite sua senha" id="password">
+
+        <br>
+        <label for="confirmar-password">Confirmar senha </label>
+        <input type="password" placeholder="Confirme sua senha" id="confirmar-password">
+
+        <button type="reset">Enviar</button>
+    </form>
+
+    <hr>
+
+    <h2>Faça Login</h2>
+    <form>
+        <label for="email">Email:</label> <br>
+        <input type="email" placeholder="seu@email.com" id="email"><br>
+
+        <label for="login-password">Senha:</label> <br>
+        <input type="password" placeholder="***********" id="login-password">
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <hr>
+    <h2>Cadastre-se</h2>
+    <form>
+        <label for="name">Nome</label> <br>
+        <input type="text" id="name" placeholder="Ex: Giovana Banana" required> <br>
+
+        <label for="email-cadastro">Email</label> <br>
+        <input type="email" id="email-cadastro" placeholder="seu@email.com" required> <br>
+
+        <label for="password-cadastro">Senha (mínimo 6 caracteres)</label><br>
+        <input type="password" id="password-cadastro" placeholder="**********" required minlength="6"> <br>
+
+        <label for="aceitar-termos">Li e aceito os termos</label>
+        <input type="checkbox" id="aceitar-termos" required><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <hr>
+
+    <h2>Testando outros recursos do formulário</h2>
+    <form>
+        <input type="radio" id="html" value="HTML" name="linguagem">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" value="CSS" name="linguagem">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" value="JavaScript" name="linguagem">
+        <label for="js">JavaScript</label><br>
+
+        <label for="mensagem">Deixe sua mensagem</label><br>
+        <textarea name="mensagem" id="mensagem" placeholder="Olá, digite a sua mensagem" rows="5"
+            cols="40"></textarea><br>
+
+        <button type="submit">Enviar dados</button>
+    </form>
+</body>
+
+</html>

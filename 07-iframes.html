@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Iframes</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento iframe</h1>
+    <p>O elemento <code>&lt;iframe&gt;</code> permite incorporar outra página <strong>HTML</strong> dentro da página
+        atual.</p>
+
+    <h2>Criando iframe do YouTube</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/ghTrp1x_1As?si=ff3UrrklyKjcbsvv"
+        title="Vídeo do canal da Rocketseat sobre APIS"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr>
+    <h2 style="color: crimson;">Adicionando um frame do maps</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29250.401434218275!2d-46.64750012785457!3d-23.593565080491235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b002f5b7103%3A0xb025dd38c5301cf4!2sPetlove%20Ch%C3%A1cara%20Klabin!5e0!3m2!1spt-BR!2sbr!4v1780966700701!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+    <h2>Exemplo com página interna</h2>
+    <iframe src="04-imagens.html" frameborder="0" width="700" height="800"></iframe>
+
+    <hr>
+    <h2>Galeria de imagens com iframe</h2>
+    <iframe src="borboleta.jpg" width="600" height="400" name="meuFrame"></iframe>
+
+    <a href="avatar.png" target="meuFrame">Imagem 1</a>
+    <a href="borboleta.jpg" target="meuFrame">Imagem 2</a>
+    <a href="foto-computador-codigo.png" target="meuFrame">Imagem 3</a>
+
+</body>
+
+</html>

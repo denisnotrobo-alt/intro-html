@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento de navegação</h1>
+    <hr>
+    <h2>Definição de link</h2>
+    <p>Um link é um elemento que permite navegar de uma <strong>página</strong>, <strong>documento</strong> ou
+        <strong>recurso</strong> para outro.
+    </p>
+
+    <p>No html, a gente usa os links para:</p>
+    <ul>
+        <li>Abrir um site <em>externo</em></li>
+        <li>Levar o usuário para outra página do site</li>
+        <li>iniciar download de arquivos</li>
+        <li>abrir aplicativos como e-mail e telefone</li>
+    </ul>
+
+    <h2>Conhecendo elemento a</h2>
+    <p>O elemento usado para criar links é a tag <code>a</code>(anchor)</p>
+
+    <p>href - hyperText Reference</p>
+    <p>target - define onde o conteúdo do link será aberto quando o usuário clicar nele</p>
+    <ul>
+        <li><strong>_self</strong>: Valor padrão do navegador. Indica que o site será aberto na mesma aba</li>
+
+        <li><strong>_blank</strong>: Abre o link em uma nova aba ou janela dependendo do navegador</li>
+
+        <li><strong>_parent</strong>: Usamos quando oa página está dentro de um <code>frame/iframe</code>, ou seja, o
+            link abre o frame no pai</li>
+
+        <li><strong>_top</strong>: Abre o link ocupando toda a janela do navegador, saindo de todos os frames.</li>
+    </ul>
+
+    <h3>Navegação externa</h3>
+    <a href="https://www.google.com/" target="_blank"> Acesse o site do google </a>
+
+    <hr>
+
+    <h3>Navegação interna</h3>
+    <a href="04-imagens.html"> Saiba mais sobre imagens </a>
+
+    <p>Obs.: Sempre que a navegação apontar para um site externo, utilizamos o protocolo HTTPS. Caso a navegação seja
+        interna, utilizamos apenas o nome ou indicamos o caminho do arquivo.</p>
+
+    <hr>
+
+    <h2>Explorando mais ideias com o elemento de link</h2>
+
+    <h3>Usando o elemento de link para download</h3>
+    <a href="assets/img/plantacao-algodao-mobile.jpg" download>Baixe a imagem clicando aqui</a>
+
+    <!-- br - break row - quebra de linha -->
+    <br>
+    <a href="assets/img/plantacao-algodao-desktop.jpg" download="plantacao">Clique aqui</a>
+
+
+    <h3>Acessando aplicativos</h3>
+    <p>Acessando/abrindo email</p>
+    <p>
+        <!-- mail -->
+        <a href="mailto:magodasilva@exemplo.com">Email: magodasilva@exemplo.com</a>
+    </p>
+
+    <p>Acessando/abrindo o telefone</p>
+    <p>
+        <a href="tel:+5511987654321">Celular: (11) 98765-4321</a>
+    </p>
+
+    <p>
+        <a href="https://wa.me/5511981075141" target="_blank">Entre em contato com o Mago</a>
+    </p>
+
+    <hr>
+    <a href="">Elemento 1</a>
+    <a href="">Elemento 2</a>
+
+    <p>A tag <code>a</code> é um elemento do tipo <strong>inline</strong></p>
+
+    <a href="https://unsplash.com">
+        <img src="assets/img/plantacao-algodao-mobile.jpg" alt="Plantação de algodão" height="100" width="100">
+    </a>
+</body>
+
+</html>
